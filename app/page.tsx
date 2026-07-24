@@ -1,3 +1,5 @@
+import ContactForm from "./components/ContactForm";
+
 export default function Home() {
   const questions = [
     "Почему при хороших продажах снова нет денег?",
@@ -511,70 +513,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="rounded-2xl bg-white p-5 text-[#172033] shadow-2xl shadow-black/20 sm:rounded-3xl sm:p-9">
-            <div>
-              <label htmlFor="name" className="text-sm font-semibold text-slate-700">
-                Ваше имя
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Как к вам обращаться"
-                className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-
-            <div className="mt-5">
-              <label htmlFor="phone" className="text-sm font-semibold text-slate-700">
-                Телефон или WhatsApp
-              </label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                placeholder="+7 700 000 00 00"
-                className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-
-            <div className="mt-5">
-              <label htmlFor="company" className="text-sm font-semibold text-slate-700">
-                Компания
-              </label>
-              <input
-                id="company"
-                name="company"
-                type="text"
-                placeholder="Название или сфера бизнеса"
-                className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-
-            <div className="mt-5">
-              <label htmlFor="message" className="text-sm font-semibold text-slate-700">
-                Что хотите решить
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                placeholder="Кратко опишите текущую ситуацию"
-                className="mt-2 w-full resize-none rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="mt-7 w-full rounded-xl bg-blue-700 px-6 py-4 font-semibold text-white transition hover:bg-blue-800"
-            >
-              Отправить заявку
-            </button>
-
-            <p className="mt-4 text-center text-xs leading-5 text-slate-500">
-              Нажимая кнопку, вы соглашаетесь на обработку контактных данных.
-            </p>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
