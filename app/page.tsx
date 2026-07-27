@@ -184,32 +184,48 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-12 sm:px-6 sm:py-16 lg:min-h-[calc(100vh-80px)] lg:grid-cols-2 lg:gap-14 lg:px-12">
+      <section className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:gap-10 md:py-16 lg:min-h-[calc(100vh-80px)] lg:grid-cols-2 lg:gap-14 lg:px-12">
         <div>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:mb-5 sm:text-sm sm:tracking-[0.18em]">
-            Финансовое управление для малого и среднего бизнеса
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 md:mb-5 sm:text-sm sm:tracking-[0.18em]">
+            Финансовый директор для собственника бизнеса
           </p>
 
           <h1 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Вы не знаете свой бизнес, если не знаете своих цифр.
+            Принимайте решения на основе цифр, а не интуиции
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 sm:mt-7 sm:text-lg sm:leading-8">
-            Большинство собственников принимают решения интуитивно. Я помогаю
-            принимать их на основе финансовых данных.
-          </p>
-
-          <p className="mt-4 max-w-xl leading-7 text-slate-500">
-            Работаю как внешний финансовый директор — без затрат на содержание
-            специалиста в штате.
+          <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 md:mt-7 sm:text-lg sm:leading-8">
+            Помогаю собственникам малого и среднего бизнеса видеть реальную
+            прибыль, контролировать движение денег и принимать обоснованные
+            управленческие решения. Работаю как внешний финансовый директор —
+            без затрат на штатного специалиста.
           </p>
 
           <a
             href="#contacts"
-            className="mt-8 inline-flex w-full justify-center rounded-xl bg-blue-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-800 sm:mt-9 sm:w-auto sm:px-7"
+            className="mt-6 inline-flex w-full justify-center rounded-xl bg-blue-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-800 md:mt-9 sm:w-auto sm:px-7"
           >
-            Получить финансовую диагностику
+            Обсудить мой бизнес
           </a>
+
+          <ul className="mt-4 max-w-xl space-y-1 text-sm leading-5 text-slate-500 md:mt-6 md:space-y-2 md:leading-6">
+            <li className="flex items-start gap-1.5 md:gap-2">
+              <span className="shrink-0 font-semibold text-blue-700">✓</span>
+              <span>20+ лет управленческого опыта</span>
+            </li>
+            <li className="flex items-start gap-1.5 md:gap-2">
+              <span className="shrink-0 font-semibold text-blue-700">✓</span>
+              <span>Финансы, продажи и бизнес-процессы</span>
+            </li>
+            <li className="flex items-start gap-1.5 md:gap-2">
+              <span className="shrink-0 font-semibold text-blue-700">✓</span>
+              <span>Без сложных терминов и лишней теории</span>
+            </li>
+            <li className="flex items-start gap-1.5 md:gap-2">
+              <span className="shrink-0 font-semibold text-blue-700">✓</span>
+              <span>Работаю лично с собственником</span>
+            </li>
+          </ul>
         </div>
 
         <div className="rounded-2xl bg-white p-5 shadow-xl shadow-slate-200/70 sm:rounded-3xl sm:p-9">
