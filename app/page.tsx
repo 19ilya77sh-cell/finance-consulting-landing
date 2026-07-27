@@ -179,7 +179,7 @@ export default function Home() {
             href="#contacts"
             className="shrink-0 rounded-lg bg-blue-700 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800 sm:px-5 sm:py-3"
           >
-            Записаться
+            Обсудить мой бизнес
           </a>
         </div>
       </header>
