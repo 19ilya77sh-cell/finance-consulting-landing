@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ContactForm from "./components/ContactForm";
 
 export default function Home() {
@@ -20,20 +21,8 @@ export default function Home() {
       text: "Покупки, инвестиции и выплаты собственнику не опираются на расчёты.",
     },
     {
-      title: "Прибыль есть только на бумаге",
-      text: "Бухгалтерская отчётность не показывает реальную картину бизнеса.",
-    },
-    {
       title: "Нет понимания будущих платежей",
       text: "Кассовые разрывы становятся неожиданностью и мешают работе компании.",
-    },
-    {
-      title: "Непонятно, сколько можно вывести",
-      text: "Деньги собственника смешиваются с деньгами бизнеса.",
-    },
-    {
-      title: "Нет управленческой отчётности",
-      text: "Собственник не видит прибыль, денежный поток и состояние бизнеса.",
     },
   ];
 
@@ -49,14 +38,6 @@ export default function Home() {
     {
       title: "Платёжный календарь",
       text: "Предстоящие выплаты будут запланированы заранее, а риск неожиданных кассовых разрывов снизится.",
-    },
-    {
-      title: "Контроль расходов",
-      text: "Вы увидите основные статьи затрат, отклонения от плана и расходы, которые снижают прибыль.",
-    },
-    {
-      title: "Безопасные выплаты собственнику",
-      text: "Станет понятно, сколько денег можно вывести из бизнеса без ущерба для текущей работы.",
     },
     {
       title: "Основа для управленческих решений",
@@ -89,20 +70,16 @@ export default function Home() {
 
   const trust = [
     {
-      title: "20+ лет управленческого опыта",
-      text: "Руководил коммерческими подразделениями, внедрял бизнес-процессы и финансовое управление.",
+      title: "20+ лет в управлении",
+      text: "Опыт в Казкоммерцбанке и коммерческих компаниях: директор банковского филиала, коммерческий и исполнительный директор. Управление командами до 70 человек.",
     },
     {
-      title: "Практический опыт в МСБ",
-      text: "Работал с производственными, торговыми и сервисными компаниями. Понимаю реальные проблемы собственников.",
+      title: "Рост продаж в строительной компании",
+      text: "Внедрение отраслевой CRM в отделе продаж — рост продаж в 3 раза.",
     },
     {
-      title: "Без сложной теории",
-      text: "Внедряю понятные инструменты, которыми собственник будет пользоваться каждый месяц.",
-    },
-    {
-      title: "Не бухгалтерский учёт, а управление бизнесом",
-      text: "Цель — помочь принимать финансовые решения, а не просто формировать отчёты.",
+      title: "Производство РТИ",
+      text: "Построение отдела продаж и внедрение финансового учёта — рост продаж в 10 раз, финансовый учёт внедрён.",
     },
   ];
 
@@ -113,10 +90,10 @@ export default function Home() {
       description:
         "Для собственников, которым нужно понять текущее состояние финансов и определить дальнейший план действий.",
       items: [
-        "Интервью с собственником",
-        "Анализ текущего учёта",
-        "Выявление финансовых проблем",
-        "Рекомендации и план дальнейших действий",
+        "Срок — 2 рабочих дня",
+        "Анализ текущего учёта и процессов",
+        "Выявление проблемных участков",
+        "Отчёт с рекомендациями по внедрению инструментов учёта и контроля",
       ],
     },
     {
@@ -125,10 +102,10 @@ export default function Home() {
       description:
         "Полная постановка управленческого учёта и настройка системы финансовой отчётности.",
       items: [
-        "Настройка ДДС, ОПиУ и Баланса",
-        "Настройка справочников и шаблонов",
-        "Подготовка рабочей Excel-модели",
-        "Передача первого управленческого отчёта",
+        "Срок — до 60 рабочих дней",
+        "Настроенные инструменты финансового учёта",
+        "Обучение ответственного исполнителя",
+        "Регламент ведения управленческого учёта",
       ],
       featured: true,
     },
@@ -138,10 +115,10 @@ export default function Home() {
       description:
         "Регулярная работа с финансовыми данными и поддержка собственника при принятии решений.",
       items: [
-        "Обновление финансовых отчётов",
-        "Анализ результатов месяца",
-        "Встреча с собственником",
-        "Рекомендации по дальнейшим действиям",
+        "Еженедельный контроль исполнителей и исходных данных",
+        "ОДДС, ОПиУ, Баланс и платёжный календарь",
+        "Панель управления: рентабельность, эффективность, изменение капитала",
+        "Рекомендации собственнику по результатам анализа",
       ],
     },
   ];
@@ -251,7 +228,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="problems" className="bg-white py-16 sm:py-20 lg:py-24">
+      <section id="problems" className="bg-white py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
@@ -289,7 +266,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="results" className="bg-[#f7f8fa] py-16 sm:py-20 lg:py-24">
+      <section id="results" className="bg-[#f7f8fa] py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
@@ -326,7 +303,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="process" className="bg-white py-16 sm:py-20 lg:py-24">
+      <section id="process" className="bg-white py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
@@ -362,21 +339,32 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="bg-[#f7f8fa] py-16 sm:py-20 lg:py-24">
+      <section id="about" className="bg-[#f7f8fa] py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-              Почему мне доверяют
-            </p>
+          <div className="grid max-w-4xl gap-6 sm:grid-cols-[180px_1fr] sm:items-center">
+            <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
+              <Image
+                src="/ilya-shayapov.jpg"
+                alt="Илья Шаяпов"
+                width={640}
+                height={640}
+                className="aspect-square h-auto w-full object-cover object-top"
+              />
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
+                Почему мне доверяют
+              </p>
 
             <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Практический подход к финансовому управлению
+              Илья Шаяпов
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              Работа строится вокруг задач собственника, понятных цифр и решений,
-              которые можно применять в реальном бизнесе.
+              Финансовое управление для малого и среднего бизнеса. Работаю онлайн по Казахстану, очные встречи — в Караганде.
             </p>
+            </div>
           </div>
 
           <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2">
@@ -398,7 +386,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="prices" className="bg-white py-16 sm:py-20 lg:py-24">
+      <section className="bg-white py-12 sm:py-20 lg:py-24">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">Пример результата</p>
+            <h2 className="mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-4xl">Так выглядит рабочий управленческий отчёт</h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Реальный пример отчёта: ключевые финансовые показатели собраны в одном месте, чтобы собственник видел динамику бизнеса и отклонения.</p>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <Image src="/report-example.png" alt="Пример управленческого финансового отчёта" width={900} height={650} className="h-auto w-full" />
+          </div>
+        </div>
+      </section>
+
+      <section id="prices" className="bg-white py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
@@ -489,11 +490,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contacts" className="bg-[#172033] py-16 text-white sm:py-20 lg:py-24">
+      <section id="contacts" className="bg-[#172033] py-12 text-white sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-12">
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-300 sm:text-sm sm:tracking-[0.18em]">
-              Финансовая диагностика
+              Бесплатная первая встреча
             </p>
 
             <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
@@ -501,9 +502,14 @@ export default function Home() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-5 sm:text-lg sm:leading-8">
-              Оставьте заявку. На первой встрече разберём текущую ситуацию,
-              определим основные финансовые проблемы и формат дальнейшей работы.
+              Первая встреча — бесплатно, 20–30 минут. Обсудим задачу и определим следующий шаг. В Караганде — очно, по Казахстану — онлайн.
             </p>
+
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="https://wa.me/77015296291" target="_blank" rel="noreferrer" className="rounded-xl bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Написать в WhatsApp</a>
+              <a href="tel:+77015296291" className="rounded-xl border border-slate-500 px-5 py-3 font-semibold text-white transition hover:border-white">Позвонить: +7 701 529-62-91</a>
+            </div>
+            <p className="mt-4 text-sm text-slate-400">Отвечаю в рабочие дни с 09:00 до 18:00, обычно в течение 3 часов.</p>
 
             <div className="mt-8 space-y-4 text-slate-300">
               <div className="flex items-start gap-3">
