@@ -3,12 +3,35 @@ import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   const questions = [
-    "Почему при хороших продажах снова нет денег?",
+    "Почему растут продажи, а денег больше не становится?",
     "Сколько денег можно безопасно вывести из бизнеса?",
     "Хватит ли средств на покупку оборудования?",
     "Почему растёт оборот, а прибыль не увеличивается?",
-    "Стоит ли сейчас открывать новый филиал?",
+    "Как понять, какие заказы и направления действительно прибыльны?",
     "Какая у бизнеса реальная рентабельность?",
+  ];
+
+  const services = [
+    {
+      number: "01",
+      title: "Финансовое управление",
+      text: "Управленческий учёт, реальная прибыль, движение денег, платёжный календарь и контроль себестоимости.",
+    },
+    {
+      number: "02",
+      title: "Развитие продаж",
+      text: "Анализ коммерческих процессов, воронки продаж, работы отдела и прибыльности клиентов и заказов.",
+    },
+    {
+      number: "03",
+      title: "Привлечение финансирования",
+      text: "Оценка готовности бизнеса к кредитованию, финансовые модели и бизнес-планы для переговоров с банками и инвесторами. Без гарантии одобрения.",
+    },
+    {
+      number: "04",
+      title: "Бизнес-процессы и управление",
+      text: "Описание и оптимизация процессов, внедрение управленческой отчётности и подходящих инструментов автоматизации.",
+    },
   ];
 
   const problems = [
@@ -70,8 +93,12 @@ export default function Home() {
 
   const trust = [
     {
-      title: "20+ лет в управлении",
-      text: "Опыт в Казкоммерцбанке и коммерческих компаниях: директор банковского филиала, коммерческий и исполнительный директор. Управление командами до 70 человек.",
+      title: "20+ лет опыта в банке и бизнесе",
+      text: "Казкоммерцбанк: работа с бизнесом, руководитель филиала. Затем — коммерческое и исполнительное управление компаниями, ответственность за продажи, финансы и процессы.",
+    },
+    {
+      title: "Работа с предпринимателями",
+      text: "Провёл мастер-класс по финансовому управлению для малого бизнеса в Караганде. В индивидуальных разборах рассматриваю учёт расходов, прибыльность заказов и движение денег.",
     },
     {
       title: "Рост продаж в строительной компании",
@@ -130,12 +157,12 @@ export default function Home() {
           <div>
             <div className="text-lg font-bold text-slate-900 sm:text-xl">FinControl</div>
             <div className="hidden text-xs text-slate-500 sm:block">
-              Финансовое управление для бизнеса
+              Финансы · Продажи · Управление
             </div>
           </div>
 
           <nav className="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
-            <a href="#problems" className="transition hover:text-blue-700">
+            <a href="#services" className="transition hover:text-blue-700">
               Услуги
             </a>
             <a href="#results" className="transition hover:text-blue-700">
@@ -164,18 +191,18 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:gap-10 md:py-16 lg:min-h-[calc(100vh-80px)] lg:grid-cols-2 lg:gap-14 lg:px-12">
         <div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 md:mb-5 sm:text-sm sm:tracking-[0.18em]">
-            Финансовый директор для собственника бизнеса
+            Финансовое управление и развитие бизнеса
           </p>
 
           <h1 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Принимайте решения на основе цифр, а не интуиции
+            Помогаю собственникам управлять финансами, продажами и прибылью бизнеса
           </h1>
 
           <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 md:mt-7 sm:text-lg sm:leading-8">
-            Помогаю собственникам малого и среднего бизнеса видеть реальную
-            прибыль, контролировать движение денег и принимать обоснованные
-            управленческие решения. Работаю как внешний финансовый директор —
-            без затрат на штатного специалиста.
+            Навожу порядок в финансовом управлении, помогаю находить резервы
+            прибыльности, улучшать продажи и готовить бизнес к привлечению
+            финансирования. Опираюсь на опыт руководства компаниями и работы
+            в банковском секторе.
           </p>
 
           <a
@@ -188,15 +215,15 @@ export default function Home() {
           <ul className="mt-4 max-w-xl space-y-1 text-sm leading-5 text-slate-500 md:mt-6 md:space-y-2 md:leading-6">
             <li className="flex items-start gap-1.5 md:gap-2">
               <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>20+ лет управленческого опыта</span>
+              <span>20+ лет в банковском секторе и управлении компаниями</span>
             </li>
             <li className="flex items-start gap-1.5 md:gap-2">
               <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Финансы, продажи и бизнес-процессы</span>
+              <span>Финансы, продажи, бизнес-процессы и финансирование</span>
             </li>
             <li className="flex items-start gap-1.5 md:gap-2">
               <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Без сложных терминов и лишней теории</span>
+              <span>Практические решения для малого и среднего бизнеса</span>
             </li>
             <li className="flex items-start gap-1.5 md:gap-2">
               <span className="shrink-0 font-semibold text-blue-700">✓</span>
@@ -211,7 +238,7 @@ export default function Home() {
           </p>
 
           <h2 className="mt-3 text-xl font-bold sm:text-2xl">
-            Ответим на вопросы, которые волнуют собственника
+            Вопросы, на которые собственнику нужны ответы
           </h2>
 
           <div className="mt-6 space-y-4 sm:mt-7">
@@ -222,6 +249,32 @@ export default function Home() {
                 </div>
 
                 <p className="leading-7 text-slate-600">{question}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="bg-white py-12 sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+          <div className="max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
+              Услуги
+            </p>
+            <h2 className="mt-3 text-2xl font-bold tracking-tight sm:mt-4 sm:text-4xl">
+              Решения для управления и развития бизнеса
+            </h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+              Начинаем с конкретной задачи собственника. Приоритет — финансовое
+              управление; остальные направления подключаем по необходимости.
+            </p>
+          </div>
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2">
+            {services.map((service) => (
+              <div key={service.number} className="rounded-2xl border border-slate-200 bg-[#f7f8fa] p-5 sm:p-7">
+                <span className="text-sm font-bold tracking-[0.18em] text-blue-700">{service.number}</span>
+                <h3 className="mt-3 text-xl font-bold">{service.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
               </div>
             ))}
           </div>
