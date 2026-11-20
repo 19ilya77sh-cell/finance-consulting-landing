@@ -378,7 +378,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {process.map((step) => (
               <div
                 key={step.number}
@@ -448,8 +448,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">Пример результата</p>
-            <h2 className="mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-4xl">Так выглядит рабочий управленческий отчёт</h2>
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Реальный пример отчёта: ключевые финансовые показатели собраны в одном месте, чтобы собственник видел динамику бизнеса и отклонения.</p>
+            <h2 className="mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-4xl">Как может выглядеть управленческий отчёт</h2>
+            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Пример представления финансовых показателей в одном месте: выручка, расходы, прибыль и динамика бизнеса. Состав отчётов определяется по результатам диагностики.</p>
           </div>
           <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <Image src="/report-example.png" alt="Пример управленческого финансового отчёта" width={900} height={650} className="h-auto w-full" />
