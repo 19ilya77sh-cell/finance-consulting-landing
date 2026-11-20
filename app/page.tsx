@@ -162,7 +162,7 @@ export default function Home() {
           <div>
             <div className="text-lg font-bold text-slate-900 sm:text-xl">FinControl</div>
             <div className="hidden text-xs text-slate-500 sm:block">
-              Финансы · Продажи · Управление
+              Финансы · Продажи · Процессы
             </div>
           </div>
 
@@ -198,7 +198,7 @@ export default function Home() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-[400px] w-[400px] rounded-full border border-[#c49a58]/20" />
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16 lg:px-12 lg:py-24">
           <div className="min-w-0">
-            <p className="mb-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]"><span className="h-px w-8 bg-[#c49a58]" />Финансы · Продажи · Управление</p>
+            <p className="mb-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]"><span className="h-px w-8 bg-[#c49a58]" />Финансы · Продажи · Процессы</p>
             <h1 className="max-w-2xl text-[clamp(2.35rem,4.2vw,4.1rem)] font-semibold leading-[1.09] tracking-[-0.035em]">Бизнес должен приносить <span className="text-[#dfbb7d]">прибыль, а не вопросы</span></h1>
             <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">Помогаю собственникам разобраться в финансах, повысить эффективность продаж, выстроить управление и подготовить бизнес к привлечению финансирования.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
