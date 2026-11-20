@@ -71,21 +71,26 @@ export default function Home() {
   const process = [
     {
       number: "01",
-      title: "Финансовая диагностика",
-      text: "Изучаем текущий учёт, движение денег, доходы, расходы и основные финансовые проблемы бизнеса.",
+      title: "Первая встреча",
+      text: "Обсуждаем задачу и определяем, какие данные нужны для диагностики. Это знакомство, а не бесплатный финансовый аудит.",
     },
     {
       number: "02",
+      title: "Платная диагностика",
+      text: "Изучаем текущий учёт, движение денег, доходы, расходы и основные финансовые проблемы. Формируем план действий.",
+    },
+    {
+      number: "03",
       title: "Внедрение финансового учёта",
       text: "Определяем источники данных и настраиваем регулярный сбор финансовой информации.",
     },
     {
-      number: "03",
+      number: "04",
       title: "Настройка отчётности",
       text: "Формируем отчёт о прибыли, движение денежных средств, платёжный календарь и другие необходимые отчёты.",
     },
     {
-      number: "04",
+      number: "05",
       title: "Ежемесячное сопровождение",
       text: "Анализируем результаты, выявляем отклонения и готовим рекомендации для собственника.",
     },
@@ -373,7 +378,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-5">
             {process.map((step) => (
               <div
                 key={step.number}
@@ -597,12 +602,12 @@ export default function Home() {
           <div>
             <div className="text-lg font-bold text-white">FinControl</div>
             <p className="mt-1 text-sm text-slate-400">
-              Финансовое управление для малого и среднего бизнеса
+              Финансовое управление, продажи и развитие бизнеса
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 text-sm sm:justify-end sm:gap-x-6">
-            <a href="#problems" className="transition hover:text-white">
+            <a href="#services" className="transition hover:text-white">
               Услуги
             </a>
             <a href="#results" className="transition hover:text-white">
