@@ -157,7 +157,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-[#f7f8fa] text-[#172033]">
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur">
+      <header className="border-b border-[#eae6df] bg-[#fbfaf7]/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-20 sm:px-6 lg:px-12">
           <div>
             <div className="text-lg font-bold text-slate-900 sm:text-xl">FinControl</div>
@@ -186,80 +186,48 @@ export default function Home() {
 
           <a
             href="#contacts"
-            className="shrink-0 rounded-lg bg-blue-700 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800 sm:px-5 sm:py-3"
+            className="shrink-0 rounded-lg bg-[#14243b] px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-[#253e5c] sm:px-5 sm:py-3"
           >
             Обсудить мой бизнес
           </a>
         </div>
       </header>
 
-      <section className="mx-auto grid max-w-7xl items-start gap-8 px-4 py-10 sm:px-6 md:gap-10 md:py-14 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-10 lg:px-12 lg:py-20">
-        <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 md:mb-5 sm:text-sm sm:tracking-[0.18em]">
-            Финансовое управление и развитие бизнеса
-          </p>
-
-          <h1 className="max-w-2xl text-[clamp(2rem,3.3vw,3.1rem)] font-bold leading-[1.12] tracking-tight">
-            Помогаю управлять финансами, продажами и прибылью бизнеса
-          </h1>
-
-          <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 md:mt-6 sm:text-lg sm:leading-8">
-            Навожу порядок в финансах, помогаю повышать эффективность продаж,
-            находить резервы прибыли и готовить бизнес к привлечению финансирования.
-            Опираюсь на практический опыт руководителя и банковского специалиста.
-          </p>
-
-          <a
-            href="#contacts"
-            className="mt-6 inline-flex w-full justify-center rounded-xl bg-blue-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-800 sm:w-auto sm:px-7"
-          >
-            Обсудить мой бизнес
-          </a>
-
-          <ul className="mt-5 max-w-xl space-y-1 text-sm leading-5 text-slate-500 md:space-y-2 md:leading-6">
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>20+ лет в банковском секторе и управлении компаниями</span>
-            </li>
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Финансы, продажи, бизнес-процессы и финансирование</span>
-            </li>
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Практические решения для малого и среднего бизнеса</span>
-            </li>
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Работаю лично с собственником</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="min-w-0 rounded-2xl bg-white p-5 shadow-xl shadow-slate-200/70 sm:rounded-3xl sm:p-7">
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.16em]">
-            Знакомые вопросы?
-          </p>
-
-          <h2 className="mt-3 text-xl font-bold sm:text-2xl">
-            Вопросы, на которые собственнику нужны ответы
-          </h2>
-
-          <div className="mt-6 space-y-4 sm:mt-7">
-            {questions.slice(0, 4).map((question) => (
-              <div key={question} className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
-                  ✓
-                </div>
-
-                <p className="leading-7 text-slate-600">{question}</p>
-              </div>
-            ))}
+      <section className="relative overflow-hidden bg-[#14243b] text-white">
+        <div className="pointer-events-none absolute -right-48 -top-48 h-[600px] w-[600px] rounded-full border border-white/10" />
+        <div className="pointer-events-none absolute -right-24 -top-24 h-[400px] w-[400px] rounded-full border border-[#c49a58]/20" />
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16 lg:px-12 lg:py-24">
+          <div className="min-w-0">
+            <p className="mb-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]"><span className="h-px w-8 bg-[#c49a58]" />Финансы · Продажи · Управление</p>
+            <h1 className="max-w-2xl text-[clamp(2.35rem,4.2vw,4.1rem)] font-semibold leading-[1.09] tracking-[-0.035em]">Бизнес должен приносить <span className="text-[#dfbb7d]">прибыль, а не вопросы</span></h1>
+            <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">Помогаю собственникам разобраться в финансах, повысить эффективность продаж, выстроить управление и подготовить бизнес к привлечению финансирования.</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a href="#contacts" className="inline-flex min-h-14 items-center justify-center rounded-lg bg-[#c49a58] px-7 py-4 text-center font-semibold text-[#14243b] transition hover:bg-[#dfbb7d]">Обсудить задачи бизнеса</a>
+              <a href="#about" className="inline-flex min-h-14 items-center justify-center rounded-lg border border-white/30 px-7 py-4 text-center font-medium text-white transition hover:border-white">Мой опыт и подход</a>
+            </div>
+            <p className="mt-5 text-sm text-slate-300">Первая встреча — бесплатно · Караганда и онлайн по Казахстану</p>
+          </div>
+          <div className="min-w-0 border-t border-white/20 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]">Практический опыт</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Илья Шаяпов</h2>
+            <p className="mt-2 text-sm leading-6 text-slate-300">Банковский сектор · Коммерческое и исполнительное управление</p>
+            <div className="mt-8 grid grid-cols-2 gap-5 border-y border-white/20 py-7">
+              <div><p className="text-4xl font-semibold text-[#dfbb7d]">20+</p><p className="mt-2 text-xs leading-5 text-slate-300">лет профессионального опыта</p></div>
+              <div><p className="text-xl font-semibold">Банк + бизнес</p><p className="mt-2 text-xs leading-5 text-slate-300">понимание решений с обеих сторон</p></div>
+            </div>
+            <p className="mt-6 text-sm leading-7 text-slate-200">Работал в Казкоммерцбанке, руководил коммерческими компаниями, отвечал за продажи, финансы и внедрение управленческих систем.</p>
+            <a href="#services" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#dfbb7d] transition hover:text-white">Направления работы <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
-
-      <section id="services" className="bg-white py-12 sm:py-20 lg:py-24">
+      <section className="border-b border-[#e7e1d6] bg-[#f5f3ee]">
+        <div className="mx-auto grid max-w-7xl px-4 py-5 sm:grid-cols-3 sm:px-6 lg:px-12">
+          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:pr-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Финансовая ясность</p><p className="mt-2 font-medium text-[#14243b]">Понимать прибыль и движение денег</p></div>
+          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:px-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Коммерческий результат</p><p className="mt-2 font-medium text-[#14243b]">Управлять продажами и рентабельностью</p></div>
+          <div className="py-4 sm:pl-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Решения для роста</p><p className="mt-2 font-medium text-[#14243b]">Оценивать риски и возможности развития</p></div>
+        </div>
+      </section>
+      <section id="services" className="bg-[#fbfaf7] py-12 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
@@ -275,9 +243,9 @@ export default function Home() {
           </div>
           <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2">
             {services.map((service) => (
-              <div key={service.number} className="rounded-2xl border border-slate-200 bg-[#f7f8fa] p-5 sm:p-7">
-                <span className="text-sm font-bold tracking-[0.18em] text-blue-700">{service.number}</span>
-                <h3 className="mt-3 text-xl font-bold">{service.title}</h3>
+              <div key={service.number} className="group rounded-xl border border-[#e5ded1] bg-white p-6 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-[#14243b]/10 sm:p-8">
+                <span className="text-sm font-bold tracking-[0.18em] text-[#a57b42]">{service.number}</span>
+                <h3 className="mt-5 text-xl font-semibold tracking-tight text-[#14243b] sm:text-2xl">{service.title}</h3>
                 <p className="mt-3 leading-7 text-slate-600">{service.text}</p>
               </div>
             ))}
