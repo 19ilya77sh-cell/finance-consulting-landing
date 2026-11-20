@@ -193,31 +193,30 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:gap-10 md:py-16 lg:min-h-[calc(100vh-80px)] lg:grid-cols-2 lg:gap-14 lg:px-12">
+      <section className="mx-auto grid max-w-7xl items-start gap-8 px-4 py-10 sm:px-6 md:gap-10 md:py-14 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:gap-10 lg:px-12 lg:py-20">
         <div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 md:mb-5 sm:text-sm sm:tracking-[0.18em]">
             Финансовое управление и развитие бизнеса
           </p>
 
-          <h1 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Помогаю собственникам управлять финансами, продажами и прибылью бизнеса
+          <h1 className="max-w-2xl text-[clamp(2rem,3.3vw,3.1rem)] font-bold leading-[1.12] tracking-tight">
+            Помогаю управлять финансами, продажами и прибылью бизнеса
           </h1>
 
-          <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 md:mt-7 sm:text-lg sm:leading-8">
-            Навожу порядок в финансовом управлении, помогаю находить резервы
-            прибыльности, улучшать продажи и готовить бизнес к привлечению
-            финансирования. Опираюсь на опыт руководства компаниями и работы
-            в банковском секторе.
+          <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 md:mt-6 sm:text-lg sm:leading-8">
+            Навожу порядок в финансах, помогаю повышать эффективность продаж,
+            находить резервы прибыли и готовить бизнес к привлечению финансирования.
+            Опираюсь на практический опыт руководителя и банковского специалиста.
           </p>
 
           <a
             href="#contacts"
-            className="mt-6 inline-flex w-full justify-center rounded-xl bg-blue-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-800 md:mt-9 sm:w-auto sm:px-7"
+            className="mt-6 inline-flex w-full justify-center rounded-xl bg-blue-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-800 sm:w-auto sm:px-7"
           >
             Обсудить мой бизнес
           </a>
 
-          <ul className="mt-4 max-w-xl space-y-1 text-sm leading-5 text-slate-500 md:mt-6 md:space-y-2 md:leading-6">
+          <ul className="mt-5 max-w-xl space-y-1 text-sm leading-5 text-slate-500 md:space-y-2 md:leading-6">
             <li className="flex items-start gap-1.5 md:gap-2">
               <span className="shrink-0 font-semibold text-blue-700">✓</span>
               <span>20+ лет в банковском секторе и управлении компаниями</span>
@@ -237,7 +236,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="rounded-2xl bg-white p-5 shadow-xl shadow-slate-200/70 sm:rounded-3xl sm:p-9">
+        <div className="min-w-0 rounded-2xl bg-white p-5 shadow-xl shadow-slate-200/70 sm:rounded-3xl sm:p-7">
           <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.16em]">
             Знакомые вопросы?
           </p>
@@ -247,7 +246,7 @@ export default function Home() {
           </h2>
 
           <div className="mt-6 space-y-4 sm:mt-7">
-            {questions.map((question) => (
+            {questions.slice(0, 4).map((question) => (
               <div key={question} className="flex items-start gap-3">
                 <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
                   ✓
