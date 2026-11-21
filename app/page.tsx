@@ -280,7 +280,7 @@ export default function Home() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Практика с предпринимателями</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Разбираем конкретные проблемы бизнеса</h2>
-            <p className="mt-4 leading-7 text-slate-600">В ноябре 2026 года провёл в Караганде мастер-класс по финансовому управлению для малого бизнеса. В индивидуальном разборе предпринимателя рассматривали учёт расходов, прибыльность заказов и движение денег.</p>
+            <p className="mt-4 leading-7 text-slate-600">В ноябре 2026 года провёл в Астане мастер-класс по финансовому управлению для малого бизнеса. В индивидуальном разборе предпринимателя рассматривали учёт расходов, прибыльность заказов и движение денег.</p>
             <p className="mt-3 text-sm leading-6 text-slate-500">Это примеры тем работы, а не заявления о достигнутом финансовом результате клиента.</p>
           </div>
           <div className="rounded-xl border border-[#e5ded1] bg-[#f5f3ee] p-6 sm:p-8">
