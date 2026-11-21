@@ -260,7 +260,10 @@ export default function Home() {
               <div><p className="text-sm font-semibold text-[#14243b]">Коммерческий опыт</p><p className="mt-2 text-sm leading-6 text-slate-600">Управление продажами, командами и изменениями в компаниях.</p></div>
               <div><p className="text-sm font-semibold text-[#14243b]">Внедрение систем</p><p className="mt-2 text-sm leading-6 text-slate-600">CRM, управленческий учёт и процессы принятия решений.</p></div>
             </div>
-            <p className="mt-5 text-sm text-slate-600">В 2012 году награждён медалью «Лучший финансист».</p>
+            <div className="mt-5 flex flex-col gap-1 border-l-2 border-[#c49a58] pl-4 text-sm leading-6 text-slate-700">
+              <p><span className="font-semibold text-[#14243b]">Общественная медаль АФК «Лучший финансист»</span> — награждение в 2013 году, в период работы директором Карагандинского филиала Казкоммерцбанка.</p>
+              <a href="https://web.archive.org/web/20131207183048/http://ru.kkb.kz/page/News?no=1402907" target="_blank" rel="noopener noreferrer" className="w-fit font-medium text-[#946e39] underline underline-offset-4 hover:text-[#14243b]">Публикация Казкоммерцбанка от 03.12.2013 ↗</a>
+            </div>
           </div>
         </div>
       </section>
