@@ -113,30 +113,30 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#f7f8fa] text-[#172033]">
+    <main className="min-h-screen overflow-x-hidden bg-[#fbfaf7] text-[#14243b]">
       <header className="border-b border-[#eae6df] bg-[#fbfaf7]/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-20 sm:px-6 lg:px-12">
           <div>
-            <div className="text-lg font-bold text-slate-900 sm:text-xl">FinControl</div>
+            <div className="text-xl font-semibold tracking-tight text-[#14243b] sm:text-2xl">FinControl</div>
             <div className="hidden text-xs text-slate-500 sm:block">
               Финансы · Продажи · Процессы
             </div>
           </div>
 
           <nav className="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
-            <a href="#services" className="transition hover:text-blue-700">
+            <a href="#services" className="transition hover:text-[#997340]">
               Услуги
             </a>
-            <a href="#about" className="transition hover:text-blue-700">
+            <a href="#about" className="transition hover:text-[#997340]">
               Обо мне
             </a>
-            <a href="#results" className="transition hover:text-blue-700">
+            <a href="#results" className="transition hover:text-[#997340]">
               Результат
             </a>
-            <a href="#process" className="transition hover:text-blue-700">
+            <a href="#process" className="transition hover:text-[#997340]">
               Как работаем
             </a>
-            <a href="#contacts" className="transition hover:text-blue-700">
+            <a href="#contacts" className="transition hover:text-[#997340]">
               Контакты
             </a>
           </nav>
@@ -287,152 +287,65 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="prices" className="bg-white py-12 sm:py-20 lg:py-24">
+      <section id="prices" className="bg-[#f5f3ee] py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-              Стоимость услуг
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Форматы работы
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              Итоговая стоимость зависит от размера компании, качества исходных
-              данных и объёма необходимой работы.
-            </p>
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Стоимость услуг</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Форматы сотрудничества</h2>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-slate-600">Стоимость зависит от размера компании, качества исходных данных и объёма работы. Точный состав проекта определяем после обсуждения задач.</p>
           </div>
-
-          <div className="mt-8 grid gap-5 sm:mt-12 sm:gap-6 lg:grid-cols-3">
+          <div className="mt-8 grid gap-4 lg:grid-cols-3">
             {prices.map((item) => (
-              <div
-                key={item.title}
-                className={`flex h-full flex-col rounded-2xl border p-5 sm:p-7 ${
-                  item.featured
-                    ? "border-blue-700 bg-blue-700 text-white shadow-xl shadow-blue-200/70"
-                    : "border-slate-200 bg-[#f7f8fa]"
-                }`}
-              >
-                {item.featured && (
-                  <div className="mb-5 w-fit rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em]">
-                    Основная услуга
-                  </div>
-                )}
-
-                <h3 className="text-xl font-bold sm:text-2xl">{item.title}</h3>
-
-                <div
-                  className={`mt-5 text-xl font-bold sm:text-2xl ${
-                    item.featured ? "text-white" : "text-blue-700"
-                  }`}
-                >
-                  {item.price}
-                </div>
-
-                <p
-                  className={`mt-4 leading-7 ${
-                    item.featured ? "text-blue-100" : "text-slate-600"
-                  }`}
-                >
-                  {item.description}
-                </p>
-
-                <div className="mt-6 space-y-4 sm:mt-7">
+              <article key={item.title} className={`flex h-full flex-col rounded-xl border p-6 sm:p-7 ${
+                item.featured ? "border-[#14243b] bg-[#14243b] text-white" : "border-[#e2d9cb] bg-white text-[#14243b]"
+              }`}>
+                {item.featured && <p className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-[#dfbb7d]">Основная услуга</p>}
+                <h3 className="text-xl font-semibold tracking-tight">{item.title}</h3>
+                <p className={`mt-4 text-2xl font-semibold ${
+                  item.featured ? "text-[#dfbb7d]" : "text-[#946e39]"
+                }`}>{item.price}</p>
+                <p className={`mt-3 text-sm leading-6 ${item.featured ? "text-slate-300" : "text-slate-600"}`}>{item.description}</p>
+                <ul className="mt-5 flex-1 space-y-3 border-t border-current/15 pt-5">
                   {item.items.map((point) => (
-                    <div key={point} className="flex items-start gap-3">
-                      <div
-                        className={`mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-sm font-bold ${
-                          item.featured
-                            ? "bg-white/15 text-white"
-                            : "bg-blue-100 text-blue-700"
-                        }`}
-                      >
-                        ✓
-                      </div>
-
-                      <p
-                        className={`leading-7 ${
-                          item.featured ? "text-blue-50" : "text-slate-600"
-                        }`}
-                      >
-                        {point}
-                      </p>
-                    </div>
+                    <li key={point} className="flex items-start gap-3">
+                      <span aria-hidden="true" className={`mt-1 text-sm ${item.featured ? "text-[#dfbb7d]" : "text-[#946e39]"}`}>✓</span>
+                      <span className={`text-sm leading-6 ${item.featured ? "text-slate-200" : "text-slate-600"}`}>{point}</span>
+                    </li>
                   ))}
-                </div>
-
-                <a
-                  href="#contacts"
-                  className={`mt-7 inline-flex w-full justify-center rounded-xl px-6 py-4 text-center font-semibold transition sm:mt-8 ${
-                    item.featured
-                      ? "bg-white text-blue-700 hover:bg-blue-50"
-                      : "bg-blue-700 text-white hover:bg-blue-800"
-                  }`}
-                >
-                  Обсудить задачу
-                </a>
-              </div>
+                </ul>
+                <a href="#contacts" className={`mt-6 inline-flex min-h-12 items-center justify-center rounded-lg px-5 py-3 text-center text-sm font-semibold transition ${
+                  item.featured ? "bg-[#c49a58] text-[#14243b] hover:bg-[#dfbb7d]" : "bg-[#14243b] text-white hover:bg-[#253e5c]"
+                }`}>Обсудить задачу</a>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="contacts" className="bg-[#172033] py-12 text-white sm:py-20 lg:py-24">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-12">
-          <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-300 sm:text-sm sm:tracking-[0.18em]">
-              Бесплатная первая встреча
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Обсудим финансовую ситуацию вашего бизнеса
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-5 sm:text-lg sm:leading-8">
-              Первая встреча — бесплатно, 20–30 минут. Обсудим задачу и определим следующий шаг. В Караганде — очно, по Казахстану — онлайн.
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a href="https://wa.me/77015296291" target="_blank" rel="noreferrer" className="rounded-xl bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Написать в WhatsApp</a>
-              <a href="tel:+77015296291" className="rounded-xl border border-slate-500 px-5 py-3 font-semibold text-white transition hover:border-white">Позвонить: +7 701 529-62-91</a>
-            </div>
-            <p className="mt-4 text-sm text-slate-400">Отвечаю в рабочие дни с 09:00 до 18:00, обычно в течение 3 часов.</p>
-
-            <div className="mt-8 space-y-4 text-slate-300">
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  ✓
-                </div>
-                <p className="leading-7">Разберём, какие данные уже есть в компании.</p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  ✓
-                </div>
-                <p className="leading-7">Определим, какие отчёты нужны собственнику.</p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  ✓
-                </div>
-                <p className="leading-7">Согласуем следующий практический шаг.</p>
-              </div>
+      <section id="contacts" className="bg-[#14243b] py-12 text-white sm:py-16">
+        <div className="mx-auto grid max-w-7xl items-start gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14 lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#dfbb7d]">Первая встреча — бесплатно</p>
+            <h2 className="mt-3 max-w-lg text-3xl font-semibold tracking-tight sm:text-4xl">Обсудим задачи вашего бизнеса</h2>
+            <p className="mt-5 max-w-lg leading-7 text-slate-300">За 20–30 минут познакомимся, обсудим ситуацию и определим, с чего начать. Диагностика — отдельный платный этап.</p>
+            <p className="mt-4 text-sm text-slate-300">Очно в Караганде или онлайн по Казахстану.</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href="https://wa.me/77015296291" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#c49a58] px-5 py-3 text-sm font-semibold text-[#14243b] transition hover:bg-[#dfbb7d]">Написать в WhatsApp</a>
+              <a href="tel:+77015296291" className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/30 px-5 py-3 text-sm font-medium text-white transition hover:border-white">+7 701 529-62-91</a>
             </div>
           </div>
-
           <ContactForm />
         </div>
       </section>
 
-      <footer className="border-t border-slate-800 bg-[#111827] text-slate-300">
+      <footer className="border-t border-white/10 bg-[#101e31] text-slate-300">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 text-center sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left lg:px-12">
           <div>
             <div className="text-lg font-bold text-white">FinControl</div>
             <p className="mt-1 text-sm text-slate-400">
-              Финансовое управление, продажи и развитие бизнеса
+              Финансы · Продажи · Процессы
             </p>
           </div>
 
