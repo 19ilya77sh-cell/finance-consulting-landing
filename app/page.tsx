@@ -320,7 +320,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Стоимость услуг</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Форматы сотрудничества</h2>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Форматы и стоимость сотрудничества</h2>
             </div>
             <p className="max-w-md text-sm leading-7 text-slate-600">Стоимость зависит от размера компании, качества исходных данных и объёма работы. Точный состав проекта определяем после обсуждения задач.</p>
           </div>
@@ -348,6 +348,14 @@ export default function Home() {
                 }`}>Обсудить задачу</a>
               </article>
             ))}
+          </div>
+          <div className="mt-5 flex flex-col gap-5 rounded-xl border border-[#e2d9cb] bg-white p-6 sm:p-7 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#997340]">Другие направления консалтинга</p>
+              <h3 className="mt-2 text-xl font-semibold text-[#14243b]">Продажи · Финансирование · Бизнес-процессы</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">Стоимость рассчитывается индивидуально после обсуждения задачи, объёма работ и ожидаемого результата.</p>
+            </div>
+            <a href="#contacts" className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-lg bg-[#14243b] px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#253e5c]">Оставить заявку</a>
           </div>
         </div>
       </section>
