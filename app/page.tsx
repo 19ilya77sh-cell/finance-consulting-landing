@@ -2,27 +2,54 @@ import Image from "next/image";
 import ContactForm from "./components/ContactForm";
 
 export default function Home() {
-  const questions = [
-    "Почему при хороших продажах снова нет денег?",
-    "Сколько денег можно безопасно вывести из бизнеса?",
-    "Хватит ли средств на покупку оборудования?",
-    "Почему растёт оборот, а прибыль не увеличивается?",
-    "Стоит ли сейчас открывать новый филиал?",
-    "Какая у бизнеса реальная рентабельность?",
-  ];
-
-  const problems = [
+  const services = [
     {
-      title: "Продажи растут, а денег нет",
-      text: "Выручка увеличивается, но свободных денег в бизнесе больше не становится.",
+      number: "01",
+      title: "Финансовое управление",
+      text: "Управленческий учёт, прибыль, движение денег, платёжный календарь и себестоимость.",
+      steps: [
+        "Диагностика текущих данных, расходов и движения денег",
+        "Определение правил учёта и ответственных за данные",
+        "Настройка отчётов о прибыли, движении денег и платёжного календаря",
+        "Обучение сотрудников и регулярный контроль показателей",
+      ],
+      result: "Понятная финансовая картина для контроля прибыли, платежей и управленческих решений.",
     },
     {
-      title: "Решения принимаются на глаз",
-      text: "Покупки, инвестиции и выплаты собственнику не опираются на расчёты.",
+      number: "02",
+      title: "Развитие продаж",
+      text: "Анализ воронки, коммерческих процессов, работы отдела и прибыльности заказов.",
+      steps: [
+        "Анализ каналов продаж, воронки и текущих показателей",
+        "Выявление потерь и проблем в работе отдела",
+        "Разработка изменений в процессах, мотивации и CRM при необходимости",
+        "Настройка контроля показателей и оценка изменений",
+      ],
+      result: "План улучшений и измеримые показатели для управления коммерческой работой.",
     },
     {
-      title: "Нет понимания будущих платежей",
-      text: "Кассовые разрывы становятся неожиданностью и мешают работе компании.",
+      number: "03",
+      title: "Привлечение финансирования",
+      text: "Оценка готовности бизнеса, финансовые модели и бизнес-планы для банков и инвесторов.",
+      steps: [
+        "Оценка финансового состояния и потребности в средствах",
+        "Анализ возможных источников и требований к заёмщику",
+        "Подготовка финансовой модели, бизнес-плана и расчётов",
+        "Сопровождение подготовки материалов и ответов на вопросы финансирующей стороны",
+      ],
+      result: "Комплект обоснований и расчётов для рассмотрения финансирования. Одобрение не гарантируется.",
+    },
+    {
+      number: "04",
+      title: "Оптимизация бизнес-процессов",
+      text: "Анализ процессов, устранение лишних операций и разумная автоматизация.",
+      steps: [
+        "Описание действующих процессов и зон ответственности",
+        "Поиск задержек, дублирования работ и ручных операций",
+        "Разработка целевого порядка работы и необходимых регламентов",
+        "Подбор инструментов автоматизации и сопровождение внедрения",
+      ],
+      result: "Более прозрачные процессы с понятными ответственными и контрольными точками.",
     },
   ];
 
@@ -46,41 +73,11 @@ export default function Home() {
   ];
 
   const process = [
-    {
-      number: "01",
-      title: "Финансовая диагностика",
-      text: "Изучаем текущий учёт, движение денег, доходы, расходы и основные финансовые проблемы бизнеса.",
-    },
-    {
-      number: "02",
-      title: "Внедрение финансового учёта",
-      text: "Определяем источники данных и настраиваем регулярный сбор финансовой информации.",
-    },
-    {
-      number: "03",
-      title: "Настройка отчётности",
-      text: "Формируем отчёт о прибыли, движение денежных средств, платёжный календарь и другие необходимые отчёты.",
-    },
-    {
-      number: "04",
-      title: "Ежемесячное сопровождение",
-      text: "Анализируем результаты, выявляем отклонения и готовим рекомендации для собственника.",
-    },
-  ];
-
-  const trust = [
-    {
-      title: "20+ лет в управлении",
-      text: "Опыт в Казкоммерцбанке и коммерческих компаниях: директор банковского филиала, коммерческий и исполнительный директор. Управление командами до 70 человек.",
-    },
-    {
-      title: "Рост продаж в строительной компании",
-      text: "Внедрение отраслевой CRM в отделе продаж — рост продаж в 3 раза.",
-    },
-    {
-      title: "Производство РТИ",
-      text: "Построение отдела продаж и внедрение финансового учёта — рост продаж в 10 раз, финансовый учёт внедрён.",
-    },
+    { number: "01", title: "Первая встреча", text: "Бесплатно обсуждаем задачу и определяем, подходит ли мой опыт для её решения." },
+    { number: "02", title: "Диагностика", text: "Анализируем исходные данные, проблемы и ограничения. Объём и стоимость согласовываем отдельно." },
+    { number: "03", title: "План действий", text: "Фиксируем результат, этапы, сроки, ответственность и бюджет проекта." },
+    { number: "04", title: "Реализация", text: "Внедряем согласованные изменения и необходимые инструменты." },
+    { number: "05", title: "Оценка результата", text: "Сверяем фактические показатели с целями и определяем дальнейшие действия." },
   ];
 
   const prices = [
@@ -124,432 +121,272 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen overflow-x-hidden bg-[#f7f8fa] text-[#172033]">
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur">
+    <main className="min-h-screen overflow-x-hidden bg-[#fbfaf7] text-[#14243b]">
+      <header className="border-b border-[#eae6df] bg-[#fbfaf7]/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-20 sm:px-6 lg:px-12">
           <div>
-            <div className="text-lg font-bold text-slate-900 sm:text-xl">FinControl</div>
+            <div className="text-xl font-semibold tracking-tight text-[#14243b] sm:text-2xl">FinControl</div>
             <div className="hidden text-xs text-slate-500 sm:block">
-              Финансовое управление для бизнеса
+              Финансы · Продажи · Процессы
             </div>
           </div>
 
           <nav className="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
-            <a href="#problems" className="transition hover:text-blue-700">
+            <a href="#services" className="transition hover:text-[#997340]">
               Услуги
             </a>
-            <a href="#results" className="transition hover:text-blue-700">
-              Результат
-            </a>
-            <a href="#process" className="transition hover:text-blue-700">
-              Как работаем
-            </a>
-            <a href="#about" className="transition hover:text-blue-700">
+            <a href="#about" className="transition hover:text-[#997340]">
               Обо мне
             </a>
-            <a href="#contacts" className="transition hover:text-blue-700">
+            <a href="#results" className="transition hover:text-[#997340]">
+              Результат
+            </a>
+            <a href="#process" className="transition hover:text-[#997340]">
+              Как работаем
+            </a>
+            <a href="#contacts" className="transition hover:text-[#997340]">
               Контакты
             </a>
           </nav>
 
           <a
             href="#contacts"
-            className="shrink-0 rounded-lg bg-blue-700 px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-800 sm:px-5 sm:py-3"
+            className="shrink-0 rounded-lg bg-[#14243b] px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-[#253e5c] sm:px-5 sm:py-3"
           >
             Обсудить мой бизнес
           </a>
         </div>
       </header>
 
-      <section className="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 md:gap-10 md:py-16 lg:min-h-[calc(100vh-80px)] lg:grid-cols-2 lg:gap-14 lg:px-12">
-        <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 md:mb-5 sm:text-sm sm:tracking-[0.18em]">
-            Финансовый директор для собственника бизнеса
-          </p>
-
-          <h1 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Принимайте решения на основе цифр, а не интуиции
-          </h1>
-
-          <p className="mt-5 max-w-xl text-base leading-7 text-slate-600 md:mt-7 sm:text-lg sm:leading-8">
-            Помогаю собственникам малого и среднего бизнеса видеть реальную
-            прибыль, контролировать движение денег и принимать обоснованные
-            управленческие решения. Работаю как внешний финансовый директор —
-            без затрат на штатного специалиста.
-          </p>
-
-          <a
-            href="#contacts"
-            className="mt-6 inline-flex w-full justify-center rounded-xl bg-blue-700 px-6 py-4 text-center font-semibold text-white transition hover:bg-blue-800 md:mt-9 sm:w-auto sm:px-7"
-          >
-            Обсудить мой бизнес
-          </a>
-
-          <ul className="mt-4 max-w-xl space-y-1 text-sm leading-5 text-slate-500 md:mt-6 md:space-y-2 md:leading-6">
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>20+ лет управленческого опыта</span>
-            </li>
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Финансы, продажи и бизнес-процессы</span>
-            </li>
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Без сложных терминов и лишней теории</span>
-            </li>
-            <li className="flex items-start gap-1.5 md:gap-2">
-              <span className="shrink-0 font-semibold text-blue-700">✓</span>
-              <span>Работаю лично с собственником</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="rounded-2xl bg-white p-5 shadow-xl shadow-slate-200/70 sm:rounded-3xl sm:p-9">
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.16em]">
-            Знакомые вопросы?
-          </p>
-
-          <h2 className="mt-3 text-xl font-bold sm:text-2xl">
-            Ответим на вопросы, которые волнуют собственника
-          </h2>
-
-          <div className="mt-6 space-y-4 sm:mt-7">
-            {questions.map((question) => (
-              <div key={question} className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
-                  ✓
-                </div>
-
-                <p className="leading-7 text-slate-600">{question}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="problems" className="bg-white py-12 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-              Проблемы бизнеса
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Даже успешный бизнес может терять деньги
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              Без финансового управления собственник видит отдельные цифры, но
-              не понимает общую картину.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {problems.map((problem) => (
-              <div
-                key={problem.title}
-                className="rounded-2xl border border-slate-200 bg-[#f7f8fa] p-5 sm:p-6"
-              >
-                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-red-50 text-xl font-bold text-red-600">
-                  ↓
-                </div>
-
-                <h3 className="text-xl font-bold">{problem.title}</h3>
-
-                <p className="mt-3 leading-7 text-slate-600">
-                  {problem.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="results" className="bg-[#f7f8fa] py-12 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-              Результат внедрения
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Что добавится после внедрения контроля за финансами
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              У собственника появится понятная финансовая система, которая
-              показывает реальное состояние бизнеса и помогает принимать
-              обоснованные решения.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {results.map((result) => (
-              <div
-                key={result.title}
-                className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6"
-              >
-                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-xl font-bold text-blue-700">
-                  ✓
-                </div>
-
-                <h3 className="text-xl font-bold">{result.title}</h3>
-
-                <p className="mt-3 leading-7 text-slate-600">{result.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="process" className="bg-white py-12 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-              Этапы работы
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Как проходит работа
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              Двигаемся последовательно: сначала разбираемся в текущей ситуации,
-              затем внедряем систему и сопровождаем её работу.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {process.map((step) => (
-              <div
-                key={step.number}
-                className="rounded-2xl border border-slate-200 bg-[#f7f8fa] p-5 sm:p-6"
-              >
-                <div className="text-sm font-bold tracking-[0.2em] text-blue-700">
-                  {step.number}
-                </div>
-
-                <h3 className="mt-5 text-xl font-bold">{step.title}</h3>
-
-                <p className="mt-3 leading-7 text-slate-600">{step.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="bg-[#f7f8fa] py-12 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="grid max-w-4xl gap-6 sm:grid-cols-[180px_1fr] sm:items-center">
-            <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
-              <Image
-                src="/ilya-shayapov.jpg"
-                alt="Илья Шаяпов"
-                width={640}
-                height={640}
-                className="aspect-square h-auto w-full object-cover object-top"
-              />
+      <section className="relative overflow-hidden bg-[#14243b] text-white">
+        <div className="pointer-events-none absolute -right-48 -top-48 h-[600px] w-[600px] rounded-full border border-white/10" />
+        <div className="pointer-events-none absolute -right-24 -top-24 h-[400px] w-[400px] rounded-full border border-[#c49a58]/20" />
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16 lg:px-12 lg:py-24">
+          <div className="min-w-0">
+            <p className="mb-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]"><span className="h-px w-8 bg-[#c49a58]" />Финансы · Продажи · Процессы</p>
+            <h1 className="max-w-2xl text-[clamp(2.35rem,4.2vw,4.1rem)] font-semibold leading-[1.09] tracking-[-0.035em]">Бизнес должен приносить <span className="text-[#dfbb7d]">прибыль, а не вопросы</span></h1>
+            <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">Помогаю собственникам разобраться в финансах, повысить эффективность продаж, выстроить управление и подготовить бизнес к привлечению финансирования.</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a href="#contacts" className="inline-flex min-h-14 items-center justify-center rounded-lg bg-[#c49a58] px-7 py-4 text-center font-semibold text-[#14243b] transition hover:bg-[#dfbb7d]">Обсудить задачи бизнеса</a>
+              <a href="#about" className="inline-flex min-h-14 items-center justify-center rounded-lg border border-white/30 px-7 py-4 text-center font-medium text-white transition hover:border-white">Мой опыт и подход</a>
             </div>
+            <p className="mt-5 text-sm text-slate-300">Первая встреча — бесплатно · Караганда и онлайн по Казахстану</p>
+          </div>
+          <div className="min-w-0 border-t border-white/20 pt-8 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]">Практический опыт</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Илья Шаяпов</h2>
+            <p className="mt-2 text-sm leading-6 text-slate-300">Банковский сектор · Коммерческое и исполнительное управление</p>
+            <div className="mt-8 grid grid-cols-2 gap-5 border-y border-white/20 py-7">
+              <div><p className="text-4xl font-semibold text-[#dfbb7d]">20+</p><p className="mt-2 text-xs leading-5 text-slate-300">лет профессионального опыта</p></div>
+              <div><p className="text-xl font-semibold">Банк + бизнес</p><p className="mt-2 text-xs leading-5 text-slate-300">понимание решений с обеих сторон</p></div>
+            </div>
+            <p className="mt-6 text-sm leading-7 text-slate-200">Работал в Казкоммерцбанке, руководил коммерческими компаниями, отвечал за продажи, финансы и внедрение управленческих систем.</p>
+            <a href="#services" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#dfbb7d] transition hover:text-white">Направления работы <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+      <section className="border-b border-[#e7e1d6] bg-[#f5f3ee]">
+        <div className="mx-auto grid max-w-7xl px-4 py-5 sm:grid-cols-3 sm:px-6 lg:px-12">
+          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:pr-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Финансовая ясность</p><p className="mt-2 font-medium text-[#14243b]">Понимать прибыль и движение денег</p></div>
+          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:px-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Коммерческий результат</p><p className="mt-2 font-medium text-[#14243b]">Управлять продажами и рентабельностью</p></div>
+          <div className="py-4 sm:pl-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Решения для роста</p><p className="mt-2 font-medium text-[#14243b]">Оценивать риски и возможности развития</p></div>
+        </div>
+      </section>
 
+      <section id="services" className="bg-[#fbfaf7] py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-                Почему мне доверяют
-              </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Илья Шаяпов
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              Финансовое управление для малого и среднего бизнеса. Работаю онлайн по Казахстану, очные встречи — в Караганде.
-            </p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Чем могу помочь</p>
+              <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Четыре направления работы</h2>
             </div>
+            <p className="max-w-md leading-7 text-slate-600">Начинаем с задачи собственника. Финансовое управление — основа, остальные направления подключаем при необходимости.</p>
           </div>
-
-          <div className="mt-8 grid gap-4 sm:mt-12 sm:gap-6 md:grid-cols-2">
-            {trust.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-7"
-              >
-                <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-xl font-bold text-blue-700">
-                  ✓
-                </div>
-
-                <h3 className="text-xl font-bold">{item.title}</h3>
-
-                <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-12 sm:py-20 lg:py-24">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-12">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">Пример результата</p>
-            <h2 className="mt-3 text-xl font-bold tracking-tight sm:mt-4 sm:text-4xl">Так выглядит рабочий управленческий отчёт</h2>
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">Реальный пример отчёта: ключевые финансовые показатели собраны в одном месте, чтобы собственник видел динамику бизнеса и отклонения.</p>
-          </div>
-          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <Image src="/report-example.png" alt="Пример управленческого финансового отчёта" width={900} height={650} className="h-auto w-full" />
-          </div>
-        </div>
-      </section>
-
-      <section id="prices" className="bg-white py-12 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-700 sm:text-sm sm:tracking-[0.18em]">
-              Стоимость услуг
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Форматы работы
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
-              Итоговая стоимость зависит от размера компании, качества исходных
-              данных и объёма необходимой работы.
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-5 sm:mt-12 sm:gap-6 lg:grid-cols-3">
-            {prices.map((item) => (
-              <div
-                key={item.title}
-                className={`flex h-full flex-col rounded-2xl border p-5 sm:p-7 ${
-                  item.featured
-                    ? "border-blue-700 bg-blue-700 text-white shadow-xl shadow-blue-200/70"
-                    : "border-slate-200 bg-[#f7f8fa]"
-                }`}
-              >
-                {item.featured && (
-                  <div className="mb-5 w-fit rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em]">
-                    Основная услуга
+          <div className="mt-8 grid gap-px overflow-hidden rounded-xl border border-[#e5ded1] bg-[#e5ded1] md:grid-cols-2">
+            {services.map((service) => (
+              <article key={service.number} className="bg-white p-6 sm:p-8">
+                <p className="text-xs font-semibold tracking-[0.2em] text-[#a57b42]">{service.number} / Направление</p>
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#14243b]">{service.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{service.text}</p>
+                <details className="group mt-5 border-t border-[#e5ded1] pt-4">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-[#946e39] marker:hidden [&::-webkit-details-marker]:hidden">
+                    <span>Подробнее об услуге</span>
+                    <span aria-hidden="true" className="text-lg transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  <div className="pt-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#997340]">Основные этапы</p>
+                    <ol className="mt-3 space-y-2">
+                      {service.steps.map((step, index) => (
+                        <li key={step} className="flex items-start gap-3 text-sm leading-6 text-slate-600">
+                          <span className="shrink-0 font-semibold text-[#997340]">{index + 1}.</span>
+                          <span>{step}</span>
+                        </li>
+                      ))}
+                    </ol>
+                    <p className="mt-4 text-xs font-semibold uppercase tracking-[0.14em] text-[#997340]">Что получает клиент</p>
+                    <p className="mt-2 text-sm leading-6 text-slate-700">{service.result}</p>
+                    <a href="#contacts" className="mt-4 inline-flex text-sm font-semibold text-[#946e39] underline underline-offset-4 hover:text-[#14243b]">Обсудить эту услугу</a>
                   </div>
-                )}
-
-                <h3 className="text-xl font-bold sm:text-2xl">{item.title}</h3>
-
-                <div
-                  className={`mt-5 text-xl font-bold sm:text-2xl ${
-                    item.featured ? "text-white" : "text-blue-700"
-                  }`}
-                >
-                  {item.price}
-                </div>
-
-                <p
-                  className={`mt-4 leading-7 ${
-                    item.featured ? "text-blue-100" : "text-slate-600"
-                  }`}
-                >
-                  {item.description}
-                </p>
-
-                <div className="mt-6 space-y-4 sm:mt-7">
-                  {item.items.map((point) => (
-                    <div key={point} className="flex items-start gap-3">
-                      <div
-                        className={`mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-sm font-bold ${
-                          item.featured
-                            ? "bg-white/15 text-white"
-                            : "bg-blue-100 text-blue-700"
-                        }`}
-                      >
-                        ✓
-                      </div>
-
-                      <p
-                        className={`leading-7 ${
-                          item.featured ? "text-blue-50" : "text-slate-600"
-                        }`}
-                      >
-                        {point}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-
-                <a
-                  href="#contacts"
-                  className={`mt-7 inline-flex w-full justify-center rounded-xl px-6 py-4 text-center font-semibold transition sm:mt-8 ${
-                    item.featured
-                      ? "bg-white text-blue-700 hover:bg-blue-50"
-                      : "bg-blue-700 text-white hover:bg-blue-800"
-                  }`}
-                >
-                  Обсудить задачу
-                </a>
-              </div>
+                </details>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="contacts" className="bg-[#172033] py-12 text-white sm:py-20 lg:py-24">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-12">
-          <div className="max-w-xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-300 sm:text-sm sm:tracking-[0.18em]">
-              Бесплатная первая встреча
-            </p>
-
-            <h2 className="mt-3 text-xl font-bold sm:text-2xl tracking-tight sm:mt-4 sm:text-4xl">
-              Обсудим финансовую ситуацию вашего бизнеса
-            </h2>
-
-            <p className="mt-4 text-base leading-7 text-slate-300 sm:mt-5 sm:text-lg sm:leading-8">
-              Первая встреча — бесплатно, 20–30 минут. Обсудим задачу и определим следующий шаг. В Караганде — очно, по Казахстану — онлайн.
-            </p>
-
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a href="https://wa.me/77015296291" target="_blank" rel="noreferrer" className="rounded-xl bg-green-600 px-5 py-3 font-semibold text-white transition hover:bg-green-700">Написать в WhatsApp</a>
-              <a href="tel:+77015296291" className="rounded-xl border border-slate-500 px-5 py-3 font-semibold text-white transition hover:border-white">Позвонить: +7 701 529-62-91</a>
+      <section id="about" className="bg-[#f5f3ee] py-12 sm:py-16">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[240px_1fr] lg:gap-12 lg:px-12">
+          <div className="max-w-[260px] overflow-hidden rounded-lg bg-white shadow-sm">
+            <Image src="/ilya-shayapov.jpg" alt="Илья Шаяпов" width={640} height={760} className="h-full w-full object-cover object-top" />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Опыт и подход</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Илья Шаяпов</h2>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">Более 20 лет в банковском секторе и коммерческих компаниях. 10 лет работы в Казкоммерцбанке — от менеджера по кредитованию до директора Карагандинского филиала. Затем — более 10 лет руководства коммерческими и производственными предприятиями. Отвечал за продажи, финансовые результаты и бизнес-процессы.</p>
+            <div className="mt-6 grid gap-4 border-t border-[#dbd4c7] pt-5 sm:grid-cols-3">
+              <div><p className="text-sm font-semibold text-[#14243b]">Банковская экспертиза</p><p className="mt-2 text-sm leading-6 text-slate-600">Финансовый анализ, кредитование и работа с предприятиями.</p></div>
+              <div><p className="text-sm font-semibold text-[#14243b]">Коммерческий опыт</p><p className="mt-2 text-sm leading-6 text-slate-600">Управление продажами, командами и изменениями в компаниях.</p></div>
+              <div><p className="text-sm font-semibold text-[#14243b]">Внедрение систем</p><p className="mt-2 text-sm leading-6 text-slate-600">CRM, управленческий учёт и процессы принятия решений.</p></div>
             </div>
-            <p className="mt-4 text-sm text-slate-400">Отвечаю в рабочие дни с 09:00 до 18:00, обычно в течение 3 часов.</p>
-
-            <div className="mt-8 space-y-4 text-slate-300">
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  ✓
-                </div>
-                <p className="leading-7">Разберём, какие данные уже есть в компании.</p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  ✓
-                </div>
-                <p className="leading-7">Определим, какие отчёты нужны собственнику.</p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-500/20 text-sm font-bold text-blue-300">
-                  ✓
-                </div>
-                <p className="leading-7">Согласуем следующий практический шаг.</p>
-              </div>
+            <div className="mt-5 flex flex-col gap-1 border-l-2 border-[#c49a58] pl-4 text-sm leading-6 text-slate-700">
+              <p><span className="font-semibold text-[#14243b]">Общественная медаль АФК «Лучший финансист»</span> — награждение в 2013 году, в период работы директором Карагандинского филиала Казкоммерцбанка.</p>
+              <a href="https://web.archive.org/web/20131207183048/http://ru.kkb.kz/page/News?no=1402907" target="_blank" rel="noopener noreferrer" className="w-fit font-medium text-[#946e39] underline underline-offset-4 hover:text-[#14243b]">Публикация Казкоммерцбанка от 03.12.2013 ↗</a>
             </div>
           </div>
+        </div>
+      </section>
 
+      <section id="results" className="bg-[#14243b] py-12 text-white sm:py-16">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#dfbb7d]">Результат работы</p>
+            <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Не просто отчёты. Основа для решений собственника.</h2>
+            <p className="mt-5 max-w-md leading-7 text-slate-300">Управленческие цифры нужны, чтобы видеть прибыль, планировать платежи и оценивать, какие решения бизнес может себе позволить.</p>
+          </div>
+          <div className="grid gap-0 sm:grid-cols-2">
+            {results.map((result, index) => (
+              <article key={result.title} className="border-t border-white/20 py-5 sm:px-5">
+                <span className="text-xs font-semibold tracking-[0.16em] text-[#dfbb7d]">0{index + 1}</span>
+                <h3 className="mt-2 text-lg font-semibold">{result.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{result.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-12 sm:py-16">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12 lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Практика с предпринимателями</p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Разбираем конкретные проблемы бизнеса</h2>
+            <p className="mt-4 leading-7 text-slate-600">В ноябре 2026 года провёл в Караганде мастер-класс по финансовому управлению для малого бизнеса. В индивидуальном разборе предпринимателя рассматривали учёт расходов, прибыльность заказов и движение денег.</p>
+            <p className="mt-3 text-sm leading-6 text-slate-500">Это примеры тем работы, а не заявления о достигнутом финансовом результате клиента.</p>
+          </div>
+          <div className="rounded-xl border border-[#e5ded1] bg-[#f5f3ee] p-6 sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#997340]">Пример инструмента</p>
+            <h3 className="mt-2 text-xl font-semibold text-[#14243b]">Управленческий отчёт</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">Выручка, расходы, прибыль и динамика бизнеса в одной картине. Конкретный состав отчётов определяем после диагностики.</p>
+            <div className="mt-5 overflow-hidden rounded-lg border border-[#e5ded1] bg-white">
+              <Image src="/report-example.png" alt="Иллюстративный пример управленческого отчёта" width={900} height={650} className="h-auto w-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" className="bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Формат сотрудничества</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">От первой встречи до результата</h2>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-slate-600">Знакомство бесплатно. Диагностика и дальнейшая работа — отдельные оплачиваемые этапы.</p>
+          </div>
+          <ol className="mt-8 grid gap-0 border-y border-[#ded8ce] md:grid-cols-5">
+            {process.map((step) => (
+              <li key={step.number} className="border-b border-[#e5ded1] px-0 py-5 last:border-b-0 md:border-b-0 md:border-r md:px-4 md:last:border-r-0 lg:px-5">
+                <span className="text-sm font-semibold text-[#a57b42]">{step.number}</span>
+                <h3 className="mt-3 text-base font-semibold text-[#14243b]">{step.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{step.text}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section id="prices" className="bg-[#f5f3ee] py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Стоимость услуг</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Форматы и стоимость сотрудничества</h2>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-slate-600">Стоимость зависит от размера компании, качества исходных данных и объёма работы. Точный состав проекта определяем после обсуждения задач.</p>
+          </div>
+          <div className="mt-8 grid gap-4 lg:grid-cols-3">
+            {prices.map((item) => (
+              <article key={item.title} className={`flex h-full flex-col rounded-xl border p-6 sm:p-7 ${
+                item.featured ? "border-[#14243b] bg-[#14243b] text-white" : "border-[#e2d9cb] bg-white text-[#14243b]"
+              }`}>
+                {item.featured && <p className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-[#dfbb7d]">Основная услуга</p>}
+                <h3 className="text-xl font-semibold tracking-tight">{item.title}</h3>
+                <p className={`mt-4 text-2xl font-semibold ${
+                  item.featured ? "text-[#dfbb7d]" : "text-[#946e39]"
+                }`}>{item.price}</p>
+                <p className={`mt-3 text-sm leading-6 ${item.featured ? "text-slate-300" : "text-slate-600"}`}>{item.description}</p>
+                <ul className="mt-5 flex-1 space-y-3 border-t border-current/15 pt-5">
+                  {item.items.map((point) => (
+                    <li key={point} className="flex items-start gap-3">
+                      <span aria-hidden="true" className={`mt-1 text-sm ${item.featured ? "text-[#dfbb7d]" : "text-[#946e39]"}`}>✓</span>
+                      <span className={`text-sm leading-6 ${item.featured ? "text-slate-200" : "text-slate-600"}`}>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href="#contacts" className={`mt-6 inline-flex min-h-12 items-center justify-center rounded-lg px-5 py-3 text-center text-sm font-semibold transition ${
+                  item.featured ? "bg-[#c49a58] text-[#14243b] hover:bg-[#dfbb7d]" : "bg-[#14243b] text-white hover:bg-[#253e5c]"
+                }`}>Обсудить задачу</a>
+              </article>
+            ))}
+          </div>
+          <div className="mt-5 flex flex-col gap-5 rounded-xl border border-[#e2d9cb] bg-white p-6 sm:p-7 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#997340]">Другие направления консалтинга</p>
+              <h3 className="mt-2 text-xl font-semibold text-[#14243b]">Продажи · Финансирование · Бизнес-процессы</h3>
+              <p className="mt-2 text-sm leading-7 text-slate-600">Стоимость рассчитывается индивидуально после обсуждения задачи, объёма работ и ожидаемого результата.</p>
+            </div>
+            <a href="#contacts" className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-lg bg-[#14243b] px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#253e5c]">Оставить заявку</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" className="bg-[#14243b] py-12 text-white sm:py-16">
+        <div className="mx-auto grid max-w-7xl items-start gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14 lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#dfbb7d]">Первая встреча — бесплатно</p>
+            <h2 className="mt-3 max-w-lg text-3xl font-semibold tracking-tight sm:text-4xl">Обсудим задачи вашего бизнеса</h2>
+            <p className="mt-5 max-w-lg leading-7 text-slate-300">За 20–30 минут познакомимся, обсудим ситуацию и определим, с чего начать. Диагностика — отдельный платный этап.</p>
+            <p className="mt-4 text-sm text-slate-300">Очно в Караганде или онлайн по Казахстану.</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href="https://wa.me/77015296291" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[#c49a58] px-5 py-3 text-sm font-semibold text-[#14243b] transition hover:bg-[#dfbb7d]">Написать в WhatsApp</a>
+              <a href="tel:+77015296291" className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/30 px-5 py-3 text-sm font-medium text-white transition hover:border-white">+7 701 529-62-91</a>
+            </div>
+          </div>
           <ContactForm />
         </div>
       </section>
 
-      <footer className="border-t border-slate-800 bg-[#111827] text-slate-300">
+      <footer className="border-t border-white/10 bg-[#101e31] text-slate-300">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 text-center sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left lg:px-12">
           <div>
             <div className="text-lg font-bold text-white">FinControl</div>
             <p className="mt-1 text-sm text-slate-400">
-              Финансовое управление для малого и среднего бизнеса
+              Финансы · Продажи · Процессы
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-3 text-sm sm:justify-end sm:gap-x-6">
-            <a href="#problems" className="transition hover:text-white">
+            <a href="#services" className="transition hover:text-white">
               Услуги
             </a>
             <a href="#results" className="transition hover:text-white">

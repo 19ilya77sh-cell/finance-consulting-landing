@@ -64,7 +64,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-2xl bg-white p-5 text-[#172033] shadow-2xl shadow-black/20 sm:rounded-3xl sm:p-9"
+      className="rounded-xl border border-[#e5ded1] bg-[#fbfaf7] p-5 text-[#14243b] shadow-xl shadow-black/10 sm:p-8"
     >
       <div>
         <label htmlFor="name" className="text-sm font-semibold text-slate-700">
@@ -78,7 +78,7 @@ export default function ContactForm() {
           maxLength={100}
           autoComplete="name"
           placeholder="Как к вам обращаться"
-          className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+          className="mt-2 w-full rounded-lg border border-[#d9d2c6] bg-white px-4 py-3 outline-none transition focus:border-[#a57b42] focus:ring-2 focus:ring-[#c49a58]/20"
         />
       </div>
 
@@ -94,7 +94,7 @@ export default function ContactForm() {
           maxLength={50}
           autoComplete="tel"
           placeholder="+7 700 000 00 00"
-          className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+          className="mt-2 w-full rounded-lg border border-[#d9d2c6] bg-white px-4 py-3 outline-none transition focus:border-[#a57b42] focus:ring-2 focus:ring-[#c49a58]/20"
         />
       </div>
 
@@ -109,21 +109,21 @@ export default function ContactForm() {
           maxLength={150}
           autoComplete="organization"
           placeholder="Название или сфера бизнеса"
-          className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+          className="mt-2 w-full rounded-lg border border-[#d9d2c6] bg-white px-4 py-3 outline-none transition focus:border-[#a57b42] focus:ring-2 focus:ring-[#c49a58]/20"
         />
       </div>
 
       <div className="mt-5">
         <label htmlFor="message" className="text-sm font-semibold text-slate-700">
-          Что хотите решить
+          Ваш вопрос
         </label>
         <textarea
           id="message"
           name="message"
           rows={4}
           maxLength={2000}
-          placeholder="Кратко опишите текущую ситуацию"
-          className="mt-2 w-full resize-none rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
+          placeholder="Например: не понимаю, где прибыль. Банк отказал в кредите. Не знаю, как увеличить продажи."
+          className="mt-2 w-full resize-none rounded-lg border border-[#d9d2c6] bg-white px-4 py-3 outline-none transition focus:border-[#a57b42] focus:ring-2 focus:ring-[#c49a58]/20"
         />
       </div>
 
@@ -135,7 +135,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-7 w-full rounded-xl bg-blue-700 px-6 py-4 font-semibold text-white transition hover:bg-blue-800 disabled:cursor-not-allowed disabled:bg-blue-400"
+        className="mt-7 w-full rounded-lg bg-[#14243b] px-6 py-4 font-semibold text-white transition hover:bg-[#253e5c] disabled:cursor-not-allowed disabled:opacity-60"
       >
         {isSubmitting ? "Отправка..." : "Отправить заявку"}
       </button>

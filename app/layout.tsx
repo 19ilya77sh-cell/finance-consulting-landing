@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FinControl — финансовое управление для бизнеса",
-  description: "Финансовое управление для малого и среднего бизнеса в Казахстане",
+  title: "FinControl — финансы, продажи и процессы",
+  description: "Консалтинг для малого и среднего бизнеса в Казахстане: финансовое управление, развитие продаж, бизнес-процессы и подготовка к привлечению финансирования.",
 };
 
 export default function RootLayout({
