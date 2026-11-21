@@ -254,7 +254,7 @@ export default function Home() {
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Опыт и подход</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Илья Шаяпов</h2>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">Более 20 лет в банковском секторе и коммерческих компаниях. 10 лет работы в Казкоммерцбанке — от менеджера по кредитованию до директора Карагандинского филиала. После — более 10 лет руководства коммерческими и производственными предприятиями. Отвечал за продажи, финансовые результаты и бизнес-процессы.</p>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">Более 20 лет в банковском секторе и коммерческих компаниях. 10 лет работы в Казкоммерцбанке — от менеджера по кредитованию до директора Карагандинского филиала. Затем — более 10 лет руководства коммерческими и производственными предприятиями. Отвечал за продажи, финансовые результаты и бизнес-процессы.</p>
             <div className="mt-6 grid gap-4 border-t border-[#dbd4c7] pt-5 sm:grid-cols-3">
               <div><p className="text-sm font-semibold text-[#14243b]">Банковская экспертиза</p><p className="mt-2 text-sm leading-6 text-slate-600">Финансовый анализ, кредитование и работа с предприятиями.</p></div>
               <div><p className="text-sm font-semibold text-[#14243b]">Коммерческий опыт</p><p className="mt-2 text-sm leading-6 text-slate-600">Управление продажами, командами и изменениями в компаниях.</p></div>
