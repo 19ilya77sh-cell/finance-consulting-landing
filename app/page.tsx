@@ -127,14 +127,14 @@ export default function Home() {
             <a href="#services" className="transition hover:text-blue-700">
               Услуги
             </a>
+            <a href="#about" className="transition hover:text-blue-700">
+              Обо мне
+            </a>
             <a href="#results" className="transition hover:text-blue-700">
               Результат
             </a>
             <a href="#process" className="transition hover:text-blue-700">
               Как работаем
-            </a>
-            <a href="#about" className="transition hover:text-blue-700">
-              Обо мне
             </a>
             <a href="#contacts" className="transition hover:text-blue-700">
               Контакты
@@ -206,46 +206,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="results" className="bg-[#14243b] py-12 text-white sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-7 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-12">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#dfbb7d]">Результат работы</p>
-            <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Не просто отчёты. Основа для решений собственника.</h2>
-            <p className="mt-5 max-w-md leading-7 text-slate-300">Управленческие цифры нужны, чтобы видеть прибыль, планировать платежи и оценивать, какие решения бизнес может себе позволить.</p>
-          </div>
-          <div className="grid gap-0 sm:grid-cols-2">
-            {results.map((result, index) => (
-              <article key={result.title} className="border-t border-white/20 py-5 sm:px-5">
-                <span className="text-xs font-semibold tracking-[0.16em] text-[#dfbb7d]">0{index + 1}</span>
-                <h3 className="mt-2 text-lg font-semibold">{result.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-300">{result.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="process" className="bg-white py-12 sm:py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
-          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Формат сотрудничества</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">От первой встречи до внедрения</h2>
-            </div>
-            <p className="max-w-md text-sm leading-7 text-slate-600">Знакомство бесплатно. Диагностика и дальнейшая работа — отдельные оплачиваемые этапы.</p>
-          </div>
-          <ol className="mt-8 grid gap-0 border-y border-[#ded8ce] md:grid-cols-5">
-            {process.map((step) => (
-              <li key={step.number} className="border-b border-[#e5ded1] px-0 py-5 last:border-b-0 md:border-b-0 md:border-r md:px-4 md:last:border-r-0 lg:px-5">
-                <span className="text-sm font-semibold text-[#a57b42]">{step.number}</span>
-                <h3 className="mt-3 text-base font-semibold text-[#14243b]">{step.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{step.text}</p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
       <section id="about" className="bg-[#f5f3ee] py-12 sm:py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[240px_1fr] lg:gap-12 lg:px-12">
           <div className="max-w-[260px] overflow-hidden rounded-lg bg-white shadow-sm">
@@ -268,6 +228,25 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="results" className="bg-[#14243b] py-12 text-white sm:py-16">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-12">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#dfbb7d]">Результат работы</p>
+            <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Не просто отчёты. Основа для решений собственника.</h2>
+            <p className="mt-5 max-w-md leading-7 text-slate-300">Управленческие цифры нужны, чтобы видеть прибыль, планировать платежи и оценивать, какие решения бизнес может себе позволить.</p>
+          </div>
+          <div className="grid gap-0 sm:grid-cols-2">
+            {results.map((result, index) => (
+              <article key={result.title} className="border-t border-white/20 py-5 sm:px-5">
+                <span className="text-xs font-semibold tracking-[0.16em] text-[#dfbb7d]">0{index + 1}</span>
+                <h3 className="mt-2 text-lg font-semibold">{result.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-300">{result.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white py-12 sm:py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12 lg:px-12">
           <div>
@@ -284,6 +263,27 @@ export default function Home() {
               <Image src="/report-example.png" alt="Иллюстративный пример управленческого отчёта" width={900} height={650} className="h-auto w-full" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="process" className="bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Формат сотрудничества</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">От первой встречи до внедрения</h2>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-slate-600">Знакомство бесплатно. Диагностика и дальнейшая работа — отдельные оплачиваемые этапы.</p>
+          </div>
+          <ol className="mt-8 grid gap-0 border-y border-[#ded8ce] md:grid-cols-5">
+            {process.map((step) => (
+              <li key={step.number} className="border-b border-[#e5ded1] px-0 py-5 last:border-b-0 md:border-b-0 md:border-r md:px-4 md:last:border-r-0 lg:px-5">
+                <span className="text-sm font-semibold text-[#a57b42]">{step.number}</span>
+                <h3 className="mt-3 text-base font-semibold text-[#14243b]">{step.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{step.text}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
