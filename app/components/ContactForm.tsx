@@ -115,14 +115,14 @@ export default function ContactForm() {
 
       <div className="mt-5">
         <label htmlFor="message" className="text-sm font-semibold text-slate-700">
-          Что хотите решить
+          Ваш вопрос
         </label>
         <textarea
           id="message"
           name="message"
           rows={4}
           maxLength={2000}
-          placeholder="Кратко опишите текущую ситуацию"
+          placeholder="Например: не понимаю, где прибыль. Банк отказал в кредите. Не знаю, как увеличить продажи."
           className="mt-2 w-full resize-none rounded-lg border border-[#d9d2c6] bg-white px-4 py-3 outline-none transition focus:border-[#a57b42] focus:ring-2 focus:ring-[#c49a58]/20"
         />
       </div>
