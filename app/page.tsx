@@ -5,51 +5,39 @@ export default function Home() {
   const services = [
   {
     "number": "01",
-    "title": "Возмещение затрат через QazIndustry",
-    "text": "Проверка соответствия условиям поддержки, анализ документов, подготовка заявки и сопровождение рассмотрения.",
+    "title": "Финансирование бизнеса и государственная поддержка",
+    "text": "Подготовка и сопровождение проектов для получения банковского финансирования и использования мер господдержки, включая возмещение затрат через QazIndustry.",
     "steps": [
-      "Проверка применимости мер поддержки",
-      "Анализ комплекта подтверждающих документов",
-      "Подготовка заявки и обоснований",
-      "Сопровождение рассмотрения и ответов на замечания"
+      "Анализ потребности в финансировании и финансового состояния бизнеса",
+      "Подбор подходящих банковских и государственных инструментов",
+      "Проверка наличия документов, подготовка заявки и финансовых обоснований",
+      "Сопровождение рассмотрения, ответы на запросы и замечания"
     ],
-    "result": "Подготовленная заявка; решение о возмещении принимает оператор."
+    "result": "Подготовленный проект и сопровождение его рассмотрения. Одобрение кредита, субсидии или возмещения не гарантируется."
   },
   {
     "number": "02",
     "title": "Бизнес-планы и финансовые модели",
-    "text": "Экономическое обоснование покупки оборудования, расширения производства и инвестиционных проектов.",
+    "text": "Разработка финансового обоснования для банков, инвесторов, расширения производства и оценки инвестиционных решений.",
     "steps": [
-      "Анализ исходных данных и инвестиций",
-      "Прогноз доходов, затрат и денежных потоков",
-      "Расчёт окупаемости и долговой нагрузки",
-      "Подготовка финансовой модели и бизнес-плана"
+      "Изучение проекта и сбор исходных данных",
+      "Прогноз выручки, расходов и движения денежных средств",
+      "Расчёт окупаемости, рентабельности и нагрузки по кредитам",
+      "Подготовка модели и бизнес-плана под задачу заказчика"
     ],
-    "result": "Расчёты для банка, инвестора или собственника."
+    "result": "Финансовая модель и бизнес-план с понятными расчётами для принятия решений и подачи на рассмотрение."
   },
   {
     "number": "03",
-    "title": "Подготовка и сопровождение финансирования",
-    "text": "Оценка готовности бизнеса к кредитованию, подбор инструментов и сопровождение рассмотрения.",
-    "steps": [
-      "Оценка кредитоспособности и долговой нагрузки",
-      "Сравнение доступных финансовых инструментов",
-      "Подготовка расчётов и документов",
-      "Ответы на запросы финансирующей стороны"
-    ],
-    "result": "Подготовленный проект; одобрение финансирования не гарантируется."
-  },
-  {
-    "number": "04",
     "title": "Финансовое управление",
-    "text": "Управленческий учёт, прибыль, движение денег, платёжный календарь и планирование.",
+    "text": "Внедрение управленческого учёта, контроль прибыли, движения денег, себестоимости и платёжного календаря.",
     "steps": [
-      "Диагностика данных и процессов",
-      "Настройка финансовой отчётности",
-      "Внедрение платёжного календаря",
-      "Обучение и сопровождение"
+      "Диагностика финансовых данных и процессов",
+      "Настройка управленческих отчётов и правил учёта",
+      "Планирование денежных потоков и обязательств",
+      "Обучение сотрудников и сопровождение"
     ],
-    "result": "Понятные цифры для контроля финансов и управленческих решений."
+    "result": "Инструменты для контроля финансового результата и планирования работы компании."
   }
 ];
 
@@ -113,23 +101,23 @@ export default function Home() {
     "featured": true
   },
   {
-    "title": "QazIndustry — сопровождение",
+    "title": "Финансирование и господдержка",
     "price": "после оценки проекта",
-    "description": "Документы и заявка на возмещение понесённых затрат.",
+    "description": "Подготовка и сопровождение заявок в банки и по мерам поддержки, включая QazIndustry.",
     "items": [
-      "Проверка применимости мер поддержки",
-      "Анализ документов и подготовка заявки",
-      "Сопровождение рассмотрения без гарантии выплаты"
+      "Анализ условий программ и требований банков",
+      "Подготовка документов и заявок",
+      "Сопровождение рассмотрения без гарантии одобрения"
     ]
   },
   {
-    "title": "Подготовка к финансированию",
+    "title": "Финансовое управление",
     "price": "после оценки проекта",
-    "description": "Финансовый анализ и сопровождение кредитного проекта.",
+    "description": "Внедрение управленческого учёта, финансовых отчётов и платёжного календаря.",
     "items": [
-      "Оценка финансового состояния",
-      "Подбор инструментов и обоснование",
-      "Подготовка материалов для банка"
+      "Диагностика финансовых данных",
+      "Настройка отчётов и платёжного календаря",
+      "Обучение и сопровождение"
     ]
   }
 ];
@@ -178,8 +166,8 @@ export default function Home() {
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16 lg:px-12 lg:py-24">
           <div className="min-w-0">
             <p className="mb-7 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#dfbb7d]"><span className="h-px w-8 bg-[#c49a58]" />Финансы · Продажи · Процессы</p>
-            <h1 className="max-w-2xl text-[clamp(2.35rem,4.2vw,4.1rem)] font-semibold leading-[1.09] tracking-[-0.035em]">Финансирование и <span className="text-[#dfbb7d]">господдержка бизнеса</span></h1>
-            <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">Готовлю бизнес-планы и финансовые модели, сопровождаю привлечение финансирования и получение возмещения затрат через QazIndustry. Помогаю навести порядок в финансах.</p>
+            <h1 className="max-w-2xl text-[clamp(2.35rem,4.2vw,4.1rem)] font-semibold leading-[1.09] tracking-[-0.035em]">Финансовый консалтинг <span className="text-[#dfbb7d]">для бизнеса</span></h1>
+            <p className="mt-7 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">Помогаю предпринимателям привлекать финансирование, использовать меры государственной поддержки и выстраивать финансовое управление компанией.</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a href="#contacts" className="inline-flex min-h-14 items-center justify-center rounded-lg bg-[#c49a58] px-7 py-4 text-center font-semibold text-[#14243b] transition hover:bg-[#dfbb7d]">Обсудить задачи бизнеса</a>
               <a href="#about" className="inline-flex min-h-14 items-center justify-center rounded-lg border border-white/30 px-7 py-4 text-center font-medium text-white transition hover:border-white">Мой опыт и подход</a>
@@ -192,7 +180,7 @@ export default function Home() {
             <p className="mt-2 text-sm leading-6 text-slate-300">Банковский сектор · Коммерческое и исполнительное управление</p>
             <div className="mt-8 grid grid-cols-2 gap-5 border-y border-white/20 py-7">
               <div><p className="text-4xl font-semibold text-[#dfbb7d]">20+</p><p className="mt-2 text-xs leading-5 text-slate-300">лет профессионального опыта</p></div>
-              <div><p className="text-xl font-semibold">28,4 млн ₸</p><p className="mt-2 text-xs leading-5 text-slate-300">полученных предприятиями возмещений через QazIndustry</p></div>
+              <div><p className="text-xl font-semibold">28,4 млн ₸</p><p className="mt-2 text-xs leading-5 text-slate-300">возмещений предприятиям по трём сопровождавшимся проектам</p></div>
             </div>
             <p className="mt-6 text-sm leading-7 text-slate-200">Работал в Казкоммерцбанке, руководил коммерческими компаниями, отвечал за продажи, финансы и внедрение управленческих систем.</p>
             <a href="#services" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#dfbb7d] transition hover:text-white">Направления работы <span aria-hidden="true">→</span></a>
@@ -201,9 +189,9 @@ export default function Home() {
       </section>
       <section className="border-b border-[#e7e1d6] bg-[#f5f3ee]">
         <div className="mx-auto grid max-w-7xl px-4 py-5 sm:grid-cols-3 sm:px-6 lg:px-12">
-          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:pr-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Господдержка</p><p className="mt-2 font-medium text-[#14243b]">Проверить возможность возмещения затрат</p></div>
-          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:px-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Инвестиционные проекты</p><p className="mt-2 font-medium text-[#14243b]">Подготовить бизнес-план и финансовую модель</p></div>
-          <div className="py-4 sm:pl-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Финансирование</p><p className="mt-2 font-medium text-[#14243b]">Подготовить бизнес к кредитованию</p></div>
+          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:pr-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Финансирование и господдержка</p><p className="mt-2 font-medium text-[#14243b]">Подготовить проект для банка или программы поддержки</p></div>
+          <div className="border-b border-[#e2ddd2] py-4 sm:border-b-0 sm:border-r sm:px-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Бизнес-планы и финансовые модели</p><p className="mt-2 font-medium text-[#14243b]">Обосновать инвестиции и рассчитать окупаемость</p></div>
+          <div className="py-4 sm:pl-6"><p className="text-xs font-semibold uppercase tracking-widest text-[#997340]">Финансовое управление</p><p className="mt-2 font-medium text-[#14243b]">Контролировать прибыль, платежи и денежные потоки</p></div>
         </div>
       </section>
 
@@ -212,11 +200,11 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Чем могу помочь</p>
-              <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Финансирование, господдержка и финансовое управление</h2>
+              <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Три направления работы</h2>
             </div>
-            <p className="max-w-md leading-7 text-slate-600">Начинаем с конкретной задачи: вернуть часть затрат, подготовить инвестиционный проект или привлечь финансирование.</p>
+            <p className="max-w-md leading-7 text-slate-600">Работаем с конкретной задачей: финансирование, меры господдержки, финансовые расчёты или управленческий учёт.</p>
           </div>
-          <div className="mt-8 grid gap-px overflow-hidden rounded-xl border border-[#e5ded1] bg-[#e5ded1] md:grid-cols-2">
+          <div className="mt-8 grid gap-px overflow-hidden rounded-xl border border-[#e5ded1] bg-[#e5ded1] md:grid-cols-3">
             {services.map((service) => (
               <article key={service.number} className="bg-white p-6 sm:p-8">
                 <p className="text-xs font-semibold tracking-[0.2em] text-[#a57b42]">{service.number} / Направление</p>
@@ -274,8 +262,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-7 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#dfbb7d]">Результат работы</p>
-            <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">От конкретной задачи к подготовленным документам.</h2>
-            <p className="mt-5 max-w-md leading-7 text-slate-300">Помогаю оценить применимость программ поддержки, финансовую устойчивость проекта и подготовить материалы для его рассмотрения.</p>
+            <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Финансовые решения для развития бизнеса.</h2>
+            <p className="mt-5 max-w-md leading-7 text-slate-300">Оцениваем финансовые возможности предприятия, готовим обоснования для финансирования и настраиваем контроль денежных потоков.</p>
           </div>
           <div className="grid gap-0 sm:grid-cols-2">
             {results.map((result, index) => (
@@ -331,7 +319,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Стоимость услуг</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Услуги и ориентиры стоимости</h2>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Стоимость и условия сотрудничества</h2>
             </div>
             <p className="max-w-md text-sm leading-7 text-slate-600">Точный состав работ и цена определяются после оценки проекта и исходных документов.</p>
           </div>
@@ -362,8 +350,8 @@ export default function Home() {
           </div>
           <div className="mt-5 flex flex-col gap-5 rounded-xl border border-[#e2d9cb] bg-white p-6 sm:p-7 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#997340]">Дополнительные направления</p>
-              <h3 className="mt-2 text-xl font-semibold text-[#14243b]">Финансовое управление · Продажи · Бизнес-процессы</h3>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#997340]">Другие задачи бизнеса</p>
+              <h3 className="mt-2 text-xl font-semibold text-[#14243b]">Развитие продаж · Оптимизация бизнес-процессов</h3>
               <p className="mt-2 text-sm leading-7 text-slate-600">Стоимость рассчитывается индивидуально после обсуждения задачи, объёма работ и ожидаемого результата.</p>
             </div>
             <a href="#contacts" className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-lg bg-[#14243b] px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#253e5c]">Оставить заявку</a>
