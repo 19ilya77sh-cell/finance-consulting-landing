@@ -122,7 +122,7 @@ export default function ContactForm() {
           name="message"
           rows={4}
           maxLength={2000}
-          placeholder="Например: не понимаю, где прибыль. Банк отказал в кредите. Не знаю, как увеличить продажи."
+          placeholder="Например: купили оборудование — можно ли возместить затраты? Нужен бизнес-план для банка. Требуется финансирование."
           className="mt-2 w-full resize-none rounded-lg border border-[#d9d2c6] bg-white px-4 py-3 outline-none transition focus:border-[#a57b42] focus:ring-2 focus:ring-[#c49a58]/20"
         />
       </div>
