@@ -289,25 +289,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-12 sm:py-16">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12 lg:px-12">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Практика с предпринимателями</p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#14243b] sm:text-4xl">Подтверждённый опыт работы с производством</h2>
-            <p className="mt-4 leading-7 text-slate-600">При моём участии три предприятия получили возмещение затрат через QazIndustry (ранее КИРИ). Моя роль — анализ наличия необходимых документов, подготовка заявок и сопровождение рассмотрения.</p>
-            <p className="mt-3 text-sm leading-6 text-slate-500">Общая сумма возмещений — 28,4 млн ₸. Решение о выплатах принимает оператор программы.</p>
-          </div>
-          <div className="rounded-xl border border-[#e5ded1] bg-[#f5f3ee] p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#997340]">Пример инструмента</p>
-            <h3 className="mt-2 text-xl font-semibold text-[#14243b]">Управленческий отчёт</h3>
-            <p className="mt-2 text-sm leading-6 text-slate-600">Выручка, расходы, прибыль и динамика бизнеса в одной картине. Конкретный состав отчётов определяем после диагностики.</p>
-            <div className="mt-5 overflow-hidden rounded-lg border border-[#e5ded1] bg-white">
-              <Image src="/report-example.png" alt="Иллюстративный пример управленческого отчёта" width={900} height={650} className="h-auto w-full" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="cases" className="bg-[#f5f3ee] py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-12">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#997340]">Реализованные проекты QazIndustry</p>
